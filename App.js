@@ -33,11 +33,11 @@ function App() {
                     <Route exact path="/portfolio/my-page">
                         <Home/>
                     </Route>
-                    <Route path="/project">
-                        <Projects/>
-                    </Route>
                     <Route path="/about">
                         <About/>
+                    </Route>
+                    <Route path="/portfolio/project">
+                        <Projects/>
                     </Route>
                 </Switch>
                 <Footer/>

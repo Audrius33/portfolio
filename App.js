@@ -27,6 +27,9 @@ function App() {
                 <Navbar/>
                 <ScrollToTop/>
                 <Switch>
+                    <Route path="/">
+                        <Home/>
+                    </Route>
                     <Route exact path="/my-page">
                         <Home/>
                     </Route>

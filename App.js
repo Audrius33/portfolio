@@ -36,7 +36,7 @@ function App() {
                     <Route path="/about">
                         <About/>
                     </Route>
-                    <Route path="/portfolio/project">
+                    <Route path="/project">
                         <Projects/>
                     </Route>
                 </Switch>

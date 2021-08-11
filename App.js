@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,29 +13,37 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-  }, []);
+    const [load, upadateLoad] = useState(true);
+    useEffect(() => {
+        setTimeout(() => {
+            upadateLoad(false);
+        }, 1200);
+    }, []);
 
-  return (
-    <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
-        <ScrollToTop />
-        <Switch>
-          <Route exact path="/portfolio" component={Home} />
-          <Route path="/my-page" component={Home} />
-          <Route path="/my-page/project" component={Projects} />
-          <Route path="/my-page/about" component={About} />
-        </Switch>
-        <Footer />
-      </div>
-    </Router>
-  );
+    return (
+        <Router>
+            <Preloader load={load}/>
+            <div className="App" id={load ? "no-scroll" : "scroll"}>
+                <Navbar/>
+                <ScrollToTop/>
+                <Switch>
+                    <Route path="/portfolio">
+                        <Home/>
+                    </Route>
+                    <Route exact path="/my-page">
+                        <Home/>
+                    </Route>
+                    <Route path="/my-page/projects">
+                        <Projects/>
+                    </Route>
+                    <Route path="/my-page/about">
+                        <About/>
+                    </Route>
+                </Switch>
+                <Footer/>
+            </div>
+        </Router>
+    );
 }
 
 export default App;

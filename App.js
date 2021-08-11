@@ -27,16 +27,13 @@ function App() {
                 <Navbar/>
                 <ScrollToTop/>
                 <Switch>
-                    <Route path="/portfolio">
+                    <Route exact path="/my-page">
                         <Home/>
                     </Route>
-                    <Route exact path="/">
-                        <Home/>
-                    </Route>
-                    <Route path="/project">
+                    <Route path="/my-page/project">
                         <Projects/>
                     </Route>
-                    <Route path="/about">
+                    <Route path="/my-page/about">
                         <About/>
                     </Route>
                 </Switch>

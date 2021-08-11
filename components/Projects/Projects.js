@@ -4,10 +4,10 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
 import leaf from "../../Assets/Projects/RPGsThings.jpg";
-import emotion from "../../Assets/Projects/rain-umbrella-vancouver-weather.jpg";
+import emotion from "../../Assets/Projects/crud.jpg";
 import editor from "../../Assets/Projects/rain-umbrella-vancouver-weather.jpg";
 import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
+import suicide from "../../Assets/Projects/Working-with-adaptive-quizzes-A-beginners-guide.jpg";
 
 
 function Projects() {

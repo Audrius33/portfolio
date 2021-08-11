@@ -1,7 +1,6 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import BlogCard from "./BlogsCards";
 import Particle from "../Particle";
 
 import leaf from "../../Assets/Projects/RPGsThings.jpg";
